@@ -1,0 +1,47 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 2px 0px rgba(0, 0, 0, 0.03);
+ 
+
+
+    &-logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+
+    }
+    &-logo-icon{
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu-items{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-right: 20px;
+       
+        li{
+            list-style: none;
+        }
+        
+        a{
+            text-decoration: none;
+            color: #000000;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
+
+
+}
+
