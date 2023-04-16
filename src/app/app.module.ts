@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { InformationComponent } from './componentes/information/information.component';
 import { CharactersComponent } from './componentes/characters/characters.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 
 @NgModule({
@@ -15,12 +17,14 @@ import { CharactersComponent } from './componentes/characters/characters.compone
     NavbarComponent,
     InformationComponent,
     CharactersComponent,
+    FooterComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
 
     
   ],

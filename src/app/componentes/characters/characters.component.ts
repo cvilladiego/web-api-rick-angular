@@ -11,6 +11,7 @@ import { CharactersService } from 'src/app/services/characters.service';
 })
 export class CharactersComponent implements OnInit {
   Allcharacters: any = [];
+  paginaActual:number = 1;
   constructor(private characters: CharactersService){}
 
 
