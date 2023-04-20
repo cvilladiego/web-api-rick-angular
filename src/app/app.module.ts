@@ -9,6 +9,7 @@ import { InformationComponent } from './componentes/information/information.comp
 import { CharactersComponent } from './componentes/characters/characters.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { EpisodesComponent } from './componentes/episodes/episodes.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
     InformationComponent,
     CharactersComponent,
     FooterComponent,
+    EpisodesComponent,
     
   ],
   imports: [

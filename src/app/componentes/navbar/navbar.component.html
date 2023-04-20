@@ -7,18 +7,24 @@
     />
   </div>
 
-  <ul class="menu-items">
+  <div class="container-logo-menu">
+    <img src="../../../assets/icon-menu.svg" alt="MENU" (click)="toogleMenu()">
+  </div>
+</nav>
+
+<div class="container-menu-toggle" *ngIf="showMenu">
+  <ul>
     <li>
       <a routerLink="/characters">Character</a>
     </li>
-
     <li>
       <a href="">Episodes</a>
     </li>
   </ul>
-  <div class="menu-ver-api">
-    <a href="https://rickandmortyapi.com/" class="menu-ver-api-button">API</a>
-  </div>     
-</nav>
+</div>
+
+
+  
+
 
 <app-information> </app-information>
