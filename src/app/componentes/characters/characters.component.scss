@@ -21,6 +21,13 @@
     h1{
         margin-top: 15px;
     }
+
+    .container-status{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 10px;
+    }
     
 }
 
@@ -45,4 +52,33 @@
 .pagination ::ng-deep .ngx-pagination .current {
     background: #E86A33;
     border-radius: 5px;
+  }
+
+
+  .icon-status-dead{
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-right: 0.375rem;
+    background: rgb(214, 61, 46);
+    border-radius: 50%;
+
+  }
+
+  .icon-status-alive{
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-right: 0.375rem;
+    background: rgb(12, 157, 99);
+    border-radius: 50%;
+
+  }
+
+  .icon-status-unknown{
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-right: 0.375rem;
+    background: rgb(167, 167, 167);
+    border-radius: 50%;
+
+
   }
