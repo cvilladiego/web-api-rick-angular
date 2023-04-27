@@ -1,5 +1,9 @@
 <section>
    <div class="container-episodes">
-    <h1>holaa</h1>
+      <div class="card-episodes" *ngFor="let episode of allEpisodes.results">
+         <h2 class="card-episodes-title">{{episode.name}}</h2>
+         <h4 class="card-episodes-subtitle"> <span>Air Date: </span>  {{episode.air_date}}</h4>
+         <h4 class="card-episodes-subtitle2"> <span>Episode: </span>  {{episode.episode}}</h4>
+      </div>
    </div>
 </section>
