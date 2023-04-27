@@ -15,15 +15,15 @@
 <div class="container-menu-toggle" *ngIf="showMenu">
   <ul>
     <li>
-      <a routerLink="/characters">Characters</a>
+      <a routerLink="/characters" (click)="toogleMenu()">Characters</a>
     </li>
     <li>
-      <a routerLink="/episodes">Episodes</a>
+      <a routerLink="/episodes" (click)="toogleMenu()">Episodes</a>
     </li>
 
     <li>
       <div class="boton-api">
-        <button>API Docs</button>
+        <button (click)="showNewWindows()">API Docs</button>
       </div>
     </li>
     

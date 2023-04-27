@@ -12,4 +12,8 @@ export class NavbarComponent {
     this.showMenu = !this.showMenu;
   }
 
+  showNewWindows(){
+    window.open('https://rickandmortyapi.com/');
+  }
+
 }
