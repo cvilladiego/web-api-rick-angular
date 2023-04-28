@@ -11,7 +11,7 @@ export class InformationComponent {
   constructor(private router:Router){
     this.router.events.subscribe((event)=>{
       if(event instanceof NavigationEnd){
-        if(event.url === '/episodes'){
+        if(event.url === '/episodes' || event.url === '/search'){
           this.hideComponent = true;
         }else{
           this.hideComponent = false;

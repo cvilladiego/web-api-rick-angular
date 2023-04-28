@@ -7,9 +7,15 @@
     />
   </div>
 
+ 
+
   <div class="container-logo-menu">
+   <a routerLink="/search">
+    <img src="../../../assets/search-icon.svg" alt="SERCH">
+   </a>
     <img src="../../../assets/icon-menu.svg" alt="MENU" (click)="toogleMenu()">
   </div>
+
 </nav>
 
 <div class="container-menu-toggle" *ngIf="showMenu">

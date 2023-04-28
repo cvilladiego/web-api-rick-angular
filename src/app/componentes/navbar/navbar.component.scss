@@ -29,10 +29,11 @@
 
 }
 
+
 .container-logo-menu{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    gap: 15px;
     align-items: center;
     margin-right: 15px;
     img{

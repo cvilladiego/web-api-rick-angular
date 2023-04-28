@@ -10,6 +10,7 @@ import { CharactersComponent } from './componentes/characters/characters.compone
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { EpisodesComponent } from './componentes/episodes/episodes.component';
+import { SearchComponent } from './componentes/search/search.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { EpisodesComponent } from './componentes/episodes/episodes.component';
     CharactersComponent,
     FooterComponent,
     EpisodesComponent,
+    SearchComponent,
     
   ],
   imports: [
