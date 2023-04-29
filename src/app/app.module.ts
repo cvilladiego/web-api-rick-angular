@@ -11,6 +11,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { EpisodesComponent } from './componentes/episodes/episodes.component';
 import { SearchComponent } from './componentes/search/search.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { SearchComponent } from './componentes/search/search.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FormsModule
 
     
   ],

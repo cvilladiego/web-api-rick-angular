@@ -1,5 +1,25 @@
 <section>
     <div class="container-search">
-        <input id="myinput" type="text" placeholder="search...">
+        <input [(ngModel)]="character" (keyup)="searchCharacter(character)" type="text" placeholder="enter in character name...">
+       
     </div>
 </section>
+
+<section>
+    <div class="container-character" *ngFor="let character of searchCaracters | paginate:{itemsPerPage: 5, currentPage: paginaActual}">
+       <img src={{character.image}} alt="personaje">
+       <h1>{{character.name}}</h1>
+        <div class="container-status">
+            <span [ngClass]="{'icon-status-alive': character.status == 'Alive', 'icon-status-dead' : character.status == 'Dead', 'icon-status-unknown': character.status == 'unknown'}"></span> <h3>{{character.status}} - {{character.species}}</h3>
+        </div>
+       <h4>Origin: {{character.origin.name}}</h4>
+        
+    </div>
+</section>
+
+<div class="separator"></div>
+
+<div class="container-pagination">
+    <pagination-controls previousLabel="Anterior"
+    nextLabel="Siguiente"  (pageChange)="paginaActual = $event" class="pagination"></pagination-controls>
+</div>
