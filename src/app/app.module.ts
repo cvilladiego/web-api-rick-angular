@@ -12,6 +12,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { EpisodesComponent } from './componentes/episodes/episodes.component';
 import { SearchComponent } from './componentes/search/search.component';
 import { FormsModule } from '@angular/forms';
+import { TarjetComponent } from './componentes/tarjet/tarjet.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     EpisodesComponent,
     SearchComponent,
+    TarjetComponent,
     
   ],
   imports: [
