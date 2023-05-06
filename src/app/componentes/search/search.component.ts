@@ -15,13 +15,16 @@ export class SearchComponent {
   character:string = '';
   searchCaracters:any[] = [];
   paginaActual:number = 1;
+  loading!:boolean;
 
   searchCharacter(character:string){
+    this.loading = true;
     console.log(character);
     this.onecharacter.searchOneCharacter( character )
     .subscribe( (data:any) => {
       //console.log(data.results);
       this.searchCaracters = data.results;
+      this.loading = false;
       console.log(this.searchCaracters);
     });
 

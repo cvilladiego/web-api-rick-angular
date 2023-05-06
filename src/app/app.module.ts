@@ -13,6 +13,7 @@ import { EpisodesComponent } from './componentes/episodes/episodes.component';
 import { SearchComponent } from './componentes/search/search.component';
 import { FormsModule } from '@angular/forms';
 import { TarjetComponent } from './componentes/tarjet/tarjet.component';
+import { LoadingComponent } from './componentes/loading/loading.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { TarjetComponent } from './componentes/tarjet/tarjet.component';
     EpisodesComponent,
     SearchComponent,
     TarjetComponent,
+    LoadingComponent,
     
   ],
   imports: [

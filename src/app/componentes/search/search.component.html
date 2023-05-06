@@ -6,6 +6,8 @@
 </section>
 
 <section>
-    <app-tarjet [characters]=" searchCaracters"></app-tarjet>
+    <app-loading *ngIf="loading"></app-loading>
+    <app-tarjet *ngIf="!loading" [characters]=" searchCaracters"></app-tarjet>
 </section>
 
+ 
