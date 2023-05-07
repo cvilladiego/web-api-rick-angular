@@ -14,6 +14,7 @@ import { SearchComponent } from './componentes/search/search.component';
 import { FormsModule } from '@angular/forms';
 import { TarjetComponent } from './componentes/tarjet/tarjet.component';
 import { LoadingComponent } from './componentes/loading/loading.component';
+import { CharacterComponent } from './componentes/character/character.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { LoadingComponent } from './componentes/loading/loading.component';
     SearchComponent,
     TarjetComponent,
     LoadingComponent,
+    CharacterComponent,
     
   ],
   imports: [
