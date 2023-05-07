@@ -10,6 +10,7 @@ import { CharactersService } from 'src/app/services/characters.service';
 })
 export class CharacterComponent {
   personaje:any = {};
+  episodes:any[] = [];
   constructor(private router:ActivatedRoute, private character:CharactersService){
     router.params.subscribe(  params =>{
       const { id } = params;
@@ -24,7 +25,9 @@ export class CharacterComponent {
     this.character.viewSingleCharacter(id)
     .subscribe( character => {
       this.personaje = character;
+      this.episodes = this.personaje.episode;
       console.log(this.personaje);
+      console.log(this.episodes);
     })
 
   }

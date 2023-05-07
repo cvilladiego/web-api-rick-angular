@@ -16,6 +16,17 @@
         <span>First seen in:</span>
         <h5>{{personaje.origin.name}}</h5>
        </div>
+
+       <div class="container-episodes" >
+        <div class="container-episodes-title">
+            <span *ngFor="let episode of episodes; index as i">
+                episode {{ i }}
+    
+            </span>
+        </div>
+
+
+       </div>
        
     </div>
 </section>
