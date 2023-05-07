@@ -22,4 +22,10 @@ export class CharactersService {
     return this.http.get(`https://rickandmortyapi.com/api/character/?name=${character}`)
 
    }
+
+   viewSingleCharacter(id:number){
+    return this.http.get(`https://rickandmortyapi.com/api/character/${id}`);
+
+
+   }
 }

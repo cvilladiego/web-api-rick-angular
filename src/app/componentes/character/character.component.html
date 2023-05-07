@@ -1,1 +1,21 @@
-<p>character works!</p>
+<section>
+    <div class="character-container">
+       <img src={{personaje.image}} alt="IMAGEN PERSONAJE">
+       <h1> {{personaje.name}} </h1>
+       <div class="container-status-personaje">
+        <span [ngClass]="{'icon-status-alive': personaje.status === 'Alive', 'icon-status-dead': personaje.status === 'Dead', 'icon-status-unknown':personaje.status ==='unknown' }"> </span> <h5> {{ personaje.status}} - {{ personaje.gender }} </h5>
+       </div>
+       <h5>Species: {{personaje.species}}</h5>
+       <div class="container-location">
+        <span> Last known location: </span>
+        <h5>{{personaje.location.name}}</h5>
+       </div>
+
+
+       <div class="container-origin">
+        <span>First seen in:</span>
+        <h5>{{personaje.origin.name}}</h5>
+       </div>
+       
+    </div>
+</section>

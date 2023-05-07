@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { CharactersService } from 'src/app/services/characters.service';
+
 
 @Component({
   selector: 'app-character',
@@ -6,5 +9,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./character.component.scss']
 })
 export class CharacterComponent {
+  personaje:any = {};
+  constructor(private router:ActivatedRoute, private character:CharactersService){
+    router.params.subscribe(  params =>{
+      const { id } = params;
+      this.getSingleCharacter(id);
+      console.log(id);
+    })
+
+  }
+
+
+  getSingleCharacter(id:number){
+    this.character.viewSingleCharacter(id)
+    .subscribe( character => {
+      this.personaje = character;
+      console.log(this.personaje);
+    })
+
+  }
 
 }
