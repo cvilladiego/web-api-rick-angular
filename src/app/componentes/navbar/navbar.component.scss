@@ -82,7 +82,7 @@
        
         
         button{
-            margin-top: 30px;
+            margin-top: 25px;
             width: 100px;
             height: 30px;
             border-radius: 7px;
@@ -97,5 +97,24 @@
             
         }
     }
+}
+
+@media (min-width: 768px) {
+    .container-menu-toggle{
+        ul{
+            li{
+                a{
+                    font-size: 1.3rem;
+                }
+
+                a:hover{
+                    color: rgb(255, 152, 0);
+                }
+            }
+        }
+    }
+
+
+    
 }
 

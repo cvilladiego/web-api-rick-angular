@@ -1,15 +1,28 @@
-<div class="container-character"  *ngFor="let character of characters  | paginate:{itemsPerPage: 5, currentPage: paginaActual}">
-    <img src={{character.image}} alt="personaje">
-    <h1>{{character.name}}</h1>
-     <div class="container-status">
-         <span [ngClass]="{'icon-status-alive': character.status == 'Alive', 'icon-status-dead' : character.status == 'Dead', 'icon-status-unknown': character.status == 'unknown'}"></span> <h3>{{character.status}} - {{character.species}}</h3>
-     </div>
-    <h4>Origin: {{character.origin.name}}</h4>
-    <div class="container-button-details">
-        <button (click)="showCharacter(character.id)">Details</button>
-    </div>
+<section>
+    <div class="container-grid">
+        <div class="container-character"  *ngFor="let character of characters  | paginate:{itemsPerPage: 5, currentPage: paginaActual}">
+            <img src={{character.image}} alt="personaje">
+            <h1>{{character.name}}</h1>
+             <div class="container-status">
+                 <span [ngClass]="{'icon-status-alive': character.status == 'Alive', 'icon-status-dead' : character.status == 'Dead', 'icon-status-unknown': character.status == 'unknown'}"></span> <h3>{{character.status}} - {{character.species}}</h3>
+             </div>
+            <h4>Origin: {{character.origin.name}}</h4>
+            <div class="container-button-details">
+                <button (click)="showCharacter(character.id)">Details</button>
+            </div>
+             
+         </div>
      
- </div>
+     
+    </div>
+ </section>
+ 
+
+
+
+
+
+
 
  <div class="container-pagination">
     <pagination-controls previousLabel="Anterior"
